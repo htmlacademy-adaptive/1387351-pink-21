@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк — Форма</title>
+    <base href="https://htmlacademy-adaptive.github.io/1387351-pink-21/4/">
+</head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип компании Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://up.htmlacademy.ru/adaptive/21">
+              Html Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="page-main__header">
+        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <div class="page-main__form information">
+        <h2 class="information__prize">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </h2>
+        <form class="information__form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="information__fieldset">
+            <legend class="information__legend visually-hidden">Укажите имя, фамилию и отчество</legend>
+            <label class="information__label" for="surname" aria-label="Введите вашу фамилию">Фамилия:</label>
+            <input class="information__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            <label class="information__label" for="name" aria-label="Введите ваше имя">Имя:</label>
+            <input class="information__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+            <label class="information__label" for="middle-name" aria-label="Введите ваше отчество">Отчество:</label>
+            <input class="information__input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="information__fieldset information__fieldset--even">
+            <legend class="information__legend">Ваши безбашенные достижения в путешествии</legend>
+            <label class="information__label">
+              <input type="checkbox" class="information__input information__input--hidden" name="selfie" aria-label="Сделал селфи с акулой" checked>
+              <span class="information__checkbox"></span>
+              Сделал селфи с акулой
+            </label>
+            <label class="information__label">
+              <input type="checkbox" class="information__input information__input--hidden" name="sunburn" aria-label="Обгорел на пляже" checked>
+              <span class="information__checkbox"></span>
+              Обгорел на пляже
+            </label>
+            <label class="information__label">
+              <input type="checkbox" class="information__input information__input--hidden" name="norris" aria-label="Видел Чака Норриса">
+              <span class="information__checkbox"></span>
+              Видел Чака Норриса
+            </label>
+            <label class="information__label">
+              <input type="checkbox" class="information__input information__input--hidden" name="souvenir" aria-label="Накупил сувениров">
+              <span class="information__checkbox"></span>
+              Накупил сувениров
+            </label>
+            <label class="information__label">
+              <input type="checkbox" class="information__input information__input--hidden" name="tower" aria-label="Удержал башню" checked>
+              <span class="information__checkbox"></span>
+              Удержал башню
+            </label>
+            <label class="information__label">
+              <input type="checkbox" class="information__input information__input--hidden" name="hotel" aria-label="Разгромил отель">
+              <span class="information__checkbox"></span>
+              Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="information__fieldset">
+            <legend class="information__legend visually-hidden">Укажите телефон и адрес почты</legend>
+            <label class="information__label" for="phone" aria-label="Введите ваш номер телефона">Номер Телефона</label>
+            <input class="information__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            <label class="information__label" for="email" aria-label="Введите вашу электронную почту">Адрес почты</label>
+            <input class="information__input" id="email" type="email" name="email" placeholder="Введите почту*" required>
+          </fieldset>
+          <fieldset class="information__fieldset information__fieldset--even">
+            <legend class="information__legend">С каким приложением путешествовали?</legend>
+            <label class="information__label">
+              <input type="radio" class="information__input information__input--hidden" name="app" value="Pink для iOS" aria-label="Pink для iOS" checked>
+              <span class="information__radiobutton"></span>
+              Pink для iOS
+            </label>
+            <label class="information__label">
+              <input type="radio" class="information__input information__input--hidden" name="app" value="Pink на Android" aria-label="Pink на Android">
+              <span class="information__radiobutton"></span>
+              Pink на Android
+            </label>
+            <label class="information__label">
+              <input type="radio" class="information__input information__input--hidden" name="app" value="Windows Phone" aria-label="Windows Phone">
+              <span class="information__radiobutton"></span>
+              Windows Phone
+            </label>
+          </fieldset>
+          <fieldset class="information__fieldset">
+            <legend class="information__legend">Опишите свои эмоции</legend>
+            <label class="information__label" aria-label="Введите текст письма">
+              <textarea class="information__input information__input--feedback" cols="40" rows="5" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </label>
+          </fieldset>
+          <button type="submit" class="information__submit-button" aria-label="Отправить форму с введенными данными">
+            Отправить форму
+          </button>
+        </form>
+        <p class="information__required"><span class="information__asterisk">*</span> — обязательные поля</p>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип компании Pink">
+        </a>
+        <ul class="socials-list">
+          <li class="socials-list__item socials-list__item--twitter">
+            <a href="#" aria-label="Открыть twitter разработчика сайта">
+              Twitter
+            </a>
+          </li>
+          <li class="socials-list__item socials-list__item--facebook">
+            <a href="#" aria-label="Открыть facebook разработчика сайта">
+              Facebook
+            </a>
+          </li>
+          <li class="socials-list__item socials-list__item--youtube">
+            <a href="#" aria-label="Открыть youtube-канал разработчика сайта">
+              Yotube
+            </a>
+          </li>
+        </ul>
+        <div class="developed-by">
+          <p class="developed-by__text">Разработано</p>
+          <a class="developed-by__link" href="https://up.htmlacademy.ru/adaptive/21" aria-label="Открыть веб-страницу разработчика сайта"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
