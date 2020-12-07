@@ -1,0 +1,48 @@
+.contacts__slogan {
+  color: var(--basic-gray);
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+.contacts__heading {
+  color: var(--basic-gray);
+  font-size: 18px;
+  line-height: 1.39em;
+  font-weight: 700;
+}
+.contacts__link {
+  color: var(--basic-red);
+  font-size: 24px;
+  line-height: 1.38em;
+  font-weight: 300;
+
+  &:hover,
+  &:focus {
+    color: var(--basic-gray);
+    text-decoration: underline;
+  }
+  &:active {
+    color: var(--basic-gray03);
+    text-decoration: none;
+  }
+}
+.contacts__map {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 200px;
+  background: url("../img/map.png") no-repeat;
+}
+.contacts__dot {
+  position: absolute;
+  left: 142px;
+  bottom: 69px;
+  display: block;
+  content: "";
+  background-color: var(--basic-red);
+  width: 16px;
+  height: 16px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: solid 10px var(--basic-white);
+}
