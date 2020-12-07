@@ -1,1 +1,49 @@
-// Начните писать стили здесь
+/*Подключение стилей блоков*/
+@import "import/page.less";
+/*Fonts*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'),
+       url('../fonts/opensans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSansLight'),
+       url('../fonts/opensanslight.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensanslight.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSansBold'),
+       url('../fonts/opensansbold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensansbold.woff') format('woff'); /* Modern Browsers */
+}
+:root {
+  --basic-black: #000000;
+  --basic-black03: rgba(0, 0, 0, 0.3);
+
+  --basic-white: #FFFFFF;
+  --basic-white03: rgba(255, 255, 255, 0.3);
+
+  --basic-gray: #283645;
+  --basic-gray06: rgba(40, 54, 69, 0.6);
+  --basic-gray03: rgba(40, 54, 69, 0.3);
+  --basic-gray01: rgba(40, 54, 69, 0.1);
+  --light-gray: #F2F2F2;
+  --border-gray: #E5E5E5;
+
+  --basic-red: #D22856;
+  --basic-red03: rgba(210, 40, 86, 0.3);
+
+  --basic-green: #2AAB6D;
+  --green-hover: #1C9B5E;
+}
