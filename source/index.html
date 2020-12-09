@@ -3,34 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="page-header__logo">
+        <a class="main-nav__logo">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип компании Pink">
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://up.htmlacademy.ru/adaptive/21">
+            <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/21">
               Html Academy
             </a>
           </li>
@@ -41,7 +42,7 @@
       <h1 class="visually-hidden">Приложение Pink — раскрась свои серые будни в розовый цвет</h1>
       <section class="downloads">
         <h2 class="visually-hidden">Ссылки для скачивания приложения на телефон</h2>
-        <div class="downloads__wrapper">
+        <div class="wrapper">
           <div class="downloads__top">
             <p class="downloads__heading">
               Взгляните на жизнь иначе!
@@ -49,14 +50,14 @@
           </div>
           <div class="downloads__bottom">
             <a class="downloads__button" href="#">Скачать приложение</a>
-            <ul class="downloads__list">
-              <li class="downloads-list__item--apple">
-                <a class="downloads-list__link" href="https://www.apple.com/ru/app-store/">Логотип ЭпплСтора</a>
+            <ul class="downloads-list">
+              <li class="downloads-list__item downloads-list__item--apple">
+                <a class=" downloads-list__link" href="https://www.apple.com/ru/app-store/">Логотип ЭпплСтора</a>
               </li>
-              <li class="downloads-list__item--android">
+              <li class="downloads-list__item downloads-list__item--android">
                 <a class="downloads-list__link" href="https://play.google.com/store/apps">Логотип Андроид</a>
               </li>
-              <li class="downloads-list__item--microsoft">
+              <li class="downloads-list__item downloads-list__item--microsoft">
                 <a class="downloads-list__link" href="https://www.microsoft.com/ru-ru/store/apps">Логотип Майкрософт</a>
               </li>
             </ul>
@@ -68,7 +69,7 @@
       </section>
       <section class="features">
         <h2 class="visually-hidden">Особенности приложения Pink</h2>
-        <div class="features__wrapper">
+        <div class="features__header">
 
             <p class="features__text">
               Устали от серости мегаполиса?
@@ -76,10 +77,11 @@
             <p class="features__text">
               Нам есть, что вам предложить!
             </p>
-          <div class="features__slogan">
+        </div>
+          <div class="features__slogan wrapper">
             <ul class="features__list">
               <li class="features__item">
-                <h3 class="feautres__heading">
+                <h3 class="features__heading">
                   Поднимает настроение
                 </h3>
                 <p class="features__description">
@@ -88,29 +90,29 @@
                 </p>
               </li>
               <li class="features__item">
-                <h3 class="feautres__heading">
+                <h3 class="features__heading">
                   Меняет мир вокруг
                 </h3>
                 <p class="features__description">
                   Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                   чтобы усилить эффект
-                 </p>
+                  чтобы усилить эффект
+                </p>
               </li>
               <li class="features__item">
-                <h3 class="feautres__heading">
+                <h3 class="features__heading">
                   Заводит новых друзей
                 </h3>
                 <p class="features__description">
                   Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                   заводите новых
-                 </p>
+                  заводите новых
+                </p>
               </li>
             </ul>
           </div>
-        </div>
+
       </section>
-      <section class="effect">
-        <div class="effect__wrapper">
+      <section class="effect visually-hidden">
+        <div class="wrapper">
           <h2 class="effect__heading">Эффект на 24 часа</h2>
           <p class="effect__description">
             Британские ученые провели исследования и доказали, что положительный
@@ -121,7 +123,7 @@
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__wrapper slider">
+        <div class="wrapper slider">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item slider__item--current">
               <blockquote class="reviews__quote">
@@ -138,71 +140,71 @@
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
+            <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
           </p>
         </div>
       </section>
-      <section class="price">
+      <section class="price slider">
         <h2 class="visually-hidden">Стоимость подписки на приложение Pink</h2>
         <div class="price__table table slider__list">
           <ul class="visually-hidden">
-            <li class="table__header table__header--empty"></li>
-            <li><p class="table__features">Розовый фильтр</p></li>
-            <li><p class="table__features">Смайлики</p></li>
-            <li><p class="table__features">Комментарии</p></li>
+            <li class="table__cell table__header table__header--empty"></li>
+            <li class="table__cell"><p class="table__features">Розовый фильтр</p></li>
+            <li class="table__cell"><p class="table__features">Смайлики</p></li>
+            <li class="table__cell"><p class="table__features">Комментарии</p></li>
           </ul>
           <ul class="table__column slider__item">
-            <li class="table__header">
+            <li class="table__cell table__header">
               <h3 class="table__heading">База</h3>
               <p class="table__pricing">1,99 USD</p>
             </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Розовый фильтр</p>
               <span class="table__mark"></span>
             </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Смайлики</p>
               <span class="table__mark table__mark--unavailable"></span>
           </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Комментарии</p>
               <span class="table__mark table__mark--unavailable"></span>
             </li>
           </ul>
           <ul class="table__column table__column--hit slider__item slider__item--current">
-            <li class="table__header">
+            <li class="table__cell table__header">
               <h3 class="table__heading">Стандарт</h3>
               <p class="table__pricing">3,99 USD</p>
             </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Розовый фильтр</p>
               <span class="table__mark"></span>
             </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Смайлики</p>
               <span class="table__mark"></span>
           </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Комментарии</p>
               <span class="table__mark table__mark--unavailable"></span>
             </li>
           </ul>
           <ul class="table__column slider__item">
-            <li class="table__header">
+            <li class="table__cell table__header">
               <h3 class="table__heading">Анлим</h3>
               <p class="table__pricing">9,99 USD</p>
             </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Розовый фильтр</p>
               <span class="table__mark"></span>
             </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Смайлики</p>
               <span class="table__mark"></span>
           </li>
-            <li>
+            <li class="table__cell">
               <p class="table__features">Комментарии</p>
               <span class="table__mark"></span>
             </li>
@@ -210,9 +212,9 @@
         </div>
 
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
+          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
+          <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
         </p>
       </section>
       <section class="contacts">
@@ -232,7 +234,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <!--Здесь будет интерактивная карта с маркером-->
+          <div class="contacts__dot"></div>
         </div>
       </section>
     </main>

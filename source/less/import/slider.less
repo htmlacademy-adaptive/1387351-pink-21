@@ -1,0 +1,23 @@
+.slider__toggle {
+  background-color: var(--basic-gray03);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+
+  &:hover:not(&--current),
+  &:focus:not(&--current) {
+    background-color: var(--basic-gray06);
+  }
+
+  &:active:not(&--current) {
+    background-color: var(--basic-gray01);
+  }
+
+  &--current {
+    box-sizing: content-box;
+    background-color: var(--basic-white);
+    border: 3px solid var(--basic-gray);
+  }
+}

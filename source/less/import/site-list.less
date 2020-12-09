@@ -1,0 +1,30 @@
+.site-list {
+  background-color: var(--basic-gray);
+  list-style: none;
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 var(--basic-black), inset 0 1px 0 var(--basic-white015);
+}
+
+.site-list__link {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 1.78em;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--active {
+    /*Используется только в десктопной версии
+    border-bottom: 2px solid var(--basic-white);*/
+  }
+
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
+    color: var(--basic-red);
+  }
+
+  &:active:not(&--active) {
+    color: var(--basic-red03);
+  }
+}

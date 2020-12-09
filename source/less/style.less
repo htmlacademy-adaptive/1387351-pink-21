@@ -1,1 +1,61 @@
-// Начните писать стили здесь
+/*Подключение стилей блоков*/
+@import "import/page.less";
+@import "import/visually-hidden.less";
+@import "import/page-header.less";
+@import "import/main-nav.less";
+@import "import/site-list.less";
+@import "import/downloads.less";
+@import "import/downloads-list.less";
+@import "import/features.less";
+@import "import/reviews.less";
+@import "import/slider.less";
+@import "import/price.less";
+@import "import/table.less";
+@import "import/contacts.less";
+@import "import/socials-list.less";
+@import "import/developed-by.less";
+@import "import/wrapper.less";
+/*Fonts*/
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSansLight"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSansBold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-black03: rgba(0, 0, 0, 0.3);
+  --blue-black: #1d2631;
+
+  --basic-white: #ffffff;
+  --basic-white03: rgba(255, 255, 255, 0.3);
+  --basic-white015: rgba(255, 255, 255, 0.15);
+
+  --basic-gray: #283645;
+  --basic-gray06: rgba(40, 54, 69, 0.6);
+  --basic-gray03: rgba(40, 54, 69, 0.3);
+  --basic-gray01: rgba(40, 54, 69, 0.1);
+  --light-gray: #f2f2f2;
+  --border-gray: #e5e5e5;
+
+  --basic-red: #d22856;
+  --basic-red03: rgba(210, 40, 86, 0.3);
+
+  --basic-green: #2aab6d;
+  --green-hover: #1c9b5e;
+}
