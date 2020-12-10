@@ -1,0 +1,49 @@
+.tools__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tools__button {
+  border: 3px solid;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 700;
+  text-align: center;
+  width: 280px;
+  padding: 21px 0;
+  cursor: pointer;
+
+  &--submit {
+    color: var(--basic-red);
+    border-color: var(--basic-red);
+
+    &:hover,
+    &:focus {
+      background-color: var(--basic-red);
+      color: var(--basic-white);
+    }
+
+    &:active {
+      color: var(--basic-white03);
+    }
+  }
+
+  &--reset {
+    color: var(--basic-gray01);
+    border-color: var(--basic-gray01);
+
+    &:hover,
+    &:focus {
+      color: var(--basic-gray03);
+      border-color: var(--basic-gray03);
+    }
+
+    &:active {
+      border-color: transparent;
+      background-color: var(--basic-gray03);
+      color: var(--basic-white03);
+    }
+  }
+}
