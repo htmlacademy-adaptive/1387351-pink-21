@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav wrapper">
+      <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип компании Pink">
         </a>
@@ -44,10 +44,11 @@
       </div>
       <div class="page-main__catalog">
         <h2 class="page-main__slogan">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          Взгляните на фотографии, которые выкладывают пользователи!<br>
+          Видите, как не хватает ваших?
         </h2>
         <div class="photos">
-          <ul class="photos__list">
+          <ul class="photos__list wrapper">
             <li class="photos__item photos__item--panorama">
               <a href="#" class="photos__link" aria-label="Открыть фотографию в полном размере">
                 <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня, мост, пейзаж, тоннель, фотография снята с высоты птичьего полёта">
@@ -59,9 +60,9 @@
                   <button class="comment__like-button" type="button" name="like-button"></button>
                   <p class="comment__liked-text">Нравится: 215</p>
                 </div>
-                <p class="comment__text">Прыгать или нет? Напишите в
-                  комментарии свой совет и
-                  смотрите прямую трансляцию в
+                <p class="comment__text">Прыгать или нет? Напишите в<br>
+                  комментарии свой совет и<br>
+                  смотрите прямую трансляцию в<br>
                   перископе, задавайте свои вопросы!
                 </p>
               </blockquote>
@@ -78,7 +79,7 @@
                   <p class="comment__liked-text">Нравится: 356</p>
                 </div>
                 <p class="comment__text">
-                  Вчера он на луну летал, сегодня в руки к нам попал.
+                  Вчера он на луну летал, сегодня в<br> руки к нам попал.
                 </p>
               </blockquote>
             </li>
@@ -110,7 +111,7 @@
                   <p class="comment__liked-text">Нравится: 215</p>
                 </div>
                 <p class="comment__text">
-                  Здесь могла быть ваша цитата о высоком и вечном.
+                  Здесь могла быть ваша цитата о<br> высоком и вечном.
                 </p>
               </blockquote>
             </li>
@@ -165,16 +166,16 @@
           </ul>
         </div>
         <p class="page-main__resume">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
         </p>
       </div>
       <section class="page-main__tools">
         <h2 class="visually-hidden">Загрузите фотографию для обработки</h2>
-        <form class="tools">
+        <form class="tools wrapper" method="post" action="https://echo.htmlacademy.ru">
           <img class="tools__photo" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фотография для обработки">
           <ul class="tools__list buttons">
             <li class="buttons__item">
-              <button class="buttons__button buttons__button--current buttons__button--crop" type="button" name="crop" aria-label="Обрезать фотографию"></button>
+              <button class="buttons__button buttons__button--current buttons__button--crop" type="button" name="crop" aria-label="Обрезать фотографию" disabled></button>
             </li>
             <li class="buttons__item">
               <button class="buttons__button buttons__button--fill" type="button" name="fill" aria-label="Залить фотографию розовым"></button>
@@ -200,13 +201,13 @@
               </label>
             </li>
           </ul>
-          <button class="tools__button submit-button" type="submit" name="submit-button" aria-label="Отправить фотографию в ленту">Запостить</button>
-          <button class="tools__button reset-button" type="reset" name="reset-button" aria-label="Сбросить фильтры" disabled>Отмена</button>
+          <button class="tools__button tools__button--submit" type="submit" name="submit-button" aria-label="Отправить фотографию в ленту">Запостить</button>
+          <button class="tools__button tools__button--reset" type="reset" name="reset-button" aria-label="Сбросить фильтры">Отмена</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="wrapper">
         <a class="page-footer__logo" href="index.html">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип компании Pink">
         </a>

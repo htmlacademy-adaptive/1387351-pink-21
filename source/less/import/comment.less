@@ -1,0 +1,62 @@
+.comment {
+  background-color: var(--light-gray);
+  padding: 25px 10px 26px 17px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment__author {
+  color: var(--basic-gray);
+  font-size: 14px;
+  line-height: 1.71em;
+  font-weight: 700;
+  font-style: normal;
+  padding-right: 3px;
+}
+
+.comment__date {
+  color: var(--basic-gray);
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.comment__likes {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  order: 1;
+  flex-basis: 100%;
+}
+
+.comment__like-button {
+  cursor: pointer;
+  border: none;
+  width: 13px;
+  height: 12px;
+  background: url("../img/heart.svg") no-repeat;
+
+  &:hover,
+  &:focus {
+    background: url("../img/heart-hover.svg") no-repeat;
+  }
+}
+
+.comment__liked-text {
+  color: var(--basic-red);
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.comment__text {
+  color: var(--basic-gray);
+  font-size: 14px;
+  line-height: 1.71em;
+  font-style: normal;
+  text-align: left;
+  padding-bottom: 23px;
+  flex-basis: 100%;
+}

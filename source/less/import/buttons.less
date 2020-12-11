@@ -1,0 +1,59 @@
+.buttons {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons__button {
+  border: none;
+  cursor: pointer;
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+    background: url("../img/crop.svg") no-repeat;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/crop-hover.svg");
+    }
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+    background: url("../img/fill.svg") no-repeat;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/fill-hover.svg");
+    }
+  }
+
+  &--color {
+    width: 32px;
+    height: 32px;
+    background: url("../img/contrast.svg") no-repeat;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/contrast-hover.svg");
+    }
+  }
+}
+
+.buttons__button--current.buttons__button--crop {
+  cursor: auto;
+  background-image: url("../img/crop-current.svg");
+}
+
+.buttons__button--current.buttons__button--fill {
+  cursor: auto;
+  background-image: url("../img/fill-current.svg");
+}
+
+.buttons__button--current.buttons__button--color {
+  cursor: auto;
+  background-image: url("../img/contrast-current.svg");
+}

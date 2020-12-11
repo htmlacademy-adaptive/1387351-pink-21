@@ -1,0 +1,29 @@
+.form-buttons {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  border: 2px solid var(--basic-green);
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 1.67em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 280px;
+  padding: 13px 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--green-hover);
+    border-color: var(--green-hover);
+  }
+
+  &:active {
+    color: var(--basic-white03);
+  }
+
+  &:disabled {
+    background-color: var(--border-gray);
+    border-color: var(--border-gray);
+  }
+}
