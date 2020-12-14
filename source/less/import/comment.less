@@ -22,33 +22,24 @@
   text-transform: uppercase;
 }
 
-.comment__likes {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  order: 1;
-  flex-basis: 100%;
-}
-
 .comment__like-button {
   cursor: pointer;
-  border: none;
-  width: 13px;
-  height: 12px;
-  background: url("../img/heart.svg") no-repeat;
-
-  &:hover,
-  &:focus {
-    background: url("../img/heart-hover.svg") no-repeat;
-  }
-}
-
-.comment__liked-text {
   color: var(--basic-red);
+  border: none;
   font-size: 12px;
   line-height: 2em;
   font-weight: 400;
   text-transform: uppercase;
+  order: 1;
+  flex-basis: 100%;
+  text-align: left;
+  padding-left: 31px;
+  background: url("../img/heart.svg") no-repeat top 50% left;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/heart-hover.svg");
+  }
 }
 
 .comment__text {
