@@ -33,7 +33,7 @@
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/21">
-              Html Academy
+              HTML Academy
             </a>
           </li>
         </ul>
@@ -48,8 +48,6 @@
             <p class="downloads__heading">
               Взгляните на жизнь иначе!
             </p>
-          </div>
-          <div class="downloads__bottom">
             <a class="downloads__button" href="#">Скачать приложение</a>
             <ul class="downloads-list">
               <li class="downloads-list__item downloads-list__item--apple">
@@ -76,7 +74,7 @@
               Устали от серости мегаполиса?
             </p>
             <p class="features__text">
-              Нам есть, что вам предложить!
+              Нам есть, что вам<br> предложить!
             </p>
         </div>
           <div class="features__slogan wrapper">
@@ -112,9 +110,9 @@
           </div>
 
       </section>
-      <section class="effect visually-hidden">
-        <div class="wrapper">
-          <h2 class="effect__heading">Эффект на 24 часа</h2>
+      <section class="effect">
+        <div class="effect__wrapper">
+          <h2 class="effect__heading">Эффект на 24 часа!</h2>
           <p class="effect__description">
             Британские ученые провели исследования и доказали, что положительный
             эффект от использования приложения длится целые сутки!
@@ -129,7 +127,7 @@
             <li class="reviews__item slider__item slider__item--current">
               <blockquote class="reviews__quote">
                 <cite class="reviews__author">Николай Петров</cite>
-                <p class="reviews__job visually-hidden">
+                <p class="reviews__job">
                   25 лет, водитель трамвая
                 </p>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и
@@ -140,6 +138,10 @@
               </blockquote>
             </li>
           </ul>
+          <div class="reviews__buttons slider__buttons">
+            <button class="reviews__button reviews__button--left" type="button" aria-label="На слайд назад">L</button>
+            <button class="reviews__button reviews__button--right" type="button" aria-label="На слайд вперед">R</button>
+          </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
             <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
@@ -150,9 +152,9 @@
       <section class="price slider">
         <h2 class="visually-hidden">Стоимость подписки на приложение Pink</h2>
         <div class="price__table table slider__list">
-          <ul class="visually-hidden">
+          <ul class="table__column table__column--mobile-off">
             <li class="table__cell table__header table__header--empty"></li>
-            <li class="table__cell"><p class="table__features">Розовый фильтр</p></li>
+            <li class="table__cell table__cell--first"><p class="table__features">Розовый фильтр</p></li>
             <li class="table__cell"><p class="table__features">Смайлики</p></li>
             <li class="table__cell"><p class="table__features">Комментарии</p></li>
           </ul>
@@ -220,7 +222,7 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</h2>
+          <h2 class="contacts__slogan">Остались вопросы?<br> Свяжитесь с нами!</h2>
           <div class="contacts__phone">
             <h3 class="contacts__heading">Звоните:</h3>
             <a class="contacts__link" href="tel:+78125556666" aria-label="Контактный телефон компании Разработчика">+7 (812) 555-66-66</a>
@@ -240,7 +242,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип компании Pink">
         </a>

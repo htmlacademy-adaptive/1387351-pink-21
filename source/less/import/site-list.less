@@ -1,10 +1,21 @@
 .site-list {
   background-color: var(--basic-gray);
   list-style: none;
+  flex-basis: 100%;
+
+  @media (min-width: @desktop) {
+    background-color: var(--basic-black03);
+    display: flex;
+    gap: 79px;
+  }
 }
 
 .site-list__item {
   box-shadow: 0 1px 0 var(--basic-black), inset 0 1px 0 var(--basic-white015);
+
+  @media (min-width: @desktop) {
+    box-shadow: none;
+  }
 }
 
 .site-list__link {
@@ -14,11 +25,6 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  &--active {
-    /*Используется только в десктопной версии
-    border-bottom: 2px solid var(--basic-white);*/
-  }
-
   &:hover:not(&--active),
   &:focus:not(&--active) {
     color: var(--basic-red);
@@ -26,5 +32,19 @@
 
   &:active:not(&--active) {
     color: var(--basic-red03);
+  }
+
+  @media (min-width: @desktop) {
+    text-transform: none;
+    line-height: 1em;
+    font-weight: 400;
+
+    &--active {
+      border-bottom: 2px solid var(--basic-white);
+    }
+
+    &:active:not(&--active) {
+      color: var(--basic-white03);
+    }
   }
 }
