@@ -1,5 +1,6 @@
 .table {
   display: flex;
+  align-items: flex-end;
   overflow: hidden;
 
   @media (min-width: @tablet) {
@@ -27,7 +28,7 @@
 .table__cell {
   background-color: var(--basic-white);
   border: 1px solid var(--border-gray);
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .table__header {
@@ -35,20 +36,6 @@
 
   @media (max-width: @mobile) {
     width: 280px;
-  }
-
-  @media (min-width: @tablet) {
-    height: 75px;
-  }
-
-  @media (min-width: @desktop) {
-    height: 94px;
-  }
-
-  &--empty {
-    background-color: transparent;
-    border-top: none;
-    border-left: none;
   }
 }
 

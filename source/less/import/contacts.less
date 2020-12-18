@@ -1,18 +1,19 @@
 .contacts__wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: @tablet) {
     flex-direction: row;
-    padding: 0 49px 0 67px;
+    max-width: 544px;
     justify-content: center;
   }
 
   @media (min-width: @desktop) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 160px 0 177px;
+    max-width: 863px;
   }
 }
 
@@ -40,7 +41,7 @@
   }
 
   @media (min-width: @desktop) {
-    flex-basis: 33%;
+    flex-basis: 30%;
   }
 }
 
@@ -50,18 +51,18 @@
   }
 
   @media (min-width: @desktop) {
-    flex-basis: 33%;
+    flex-basis: 30%;
     order: 2;
   }
 }
 
 .contacts__address {
   @media (min-width: @tablet) {
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
 
   @media (min-width: @desktop) {
-    flex-basis: 33%;
+    flex-basis: 40%;
   }
 }
 
