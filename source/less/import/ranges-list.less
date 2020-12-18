@@ -1,0 +1,57 @@
+.ranges-list__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ranges-list__label {
+  width: 240px;
+}
+
+.ranges-list__input {
+  width: 100%;
+  appearance: none;
+  height: 2px;
+  background-color: var(--basic-gray);
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-red);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--basic-red);
+    }
+  }
+
+  &::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-red);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--basic-red);
+    }
+  }
+
+  &:hover::-webkit-slider-thumb,
+  &:focus::-webkit-slider-thumb {
+    background-color: var(--basic-red);
+  }
+
+  &:hover::-moz-range-thumb,
+  &:focus::-moz-range-thumb {
+    background-color: var(--basic-red);
+  }
+}

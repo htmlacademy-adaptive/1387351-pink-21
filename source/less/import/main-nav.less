@@ -1,5 +1,28 @@
 .main-nav {
   background-color: var(--basic-black03);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0 21px;
+
+  @media (min-width: @tablet) {
+    padding: 27px 0 43px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 27px 0 43px;
+    flex-wrap: nowrap;
+    gap: 173px;
+  }
+}
+
+.main-nav__logo {
+  padding-left: 20px;
+
+  @media (min-width: @desktop) {
+    padding-left: 130px;
+  }
 }
 
 .main-nav__toggle {
@@ -9,6 +32,7 @@
   background: none;
   border: none;
   background-image: url("../img/open-menu-btn.svg");
+  margin-right: 20px;
 
   &:hover,
   &:focus {
@@ -17,5 +41,9 @@
 
   &:active {
     background-image: url("../img/open-menu-btn-active.svg");
+  }
+
+  @media (min-width: @desktop) {
+    display: none;
   }
 }
