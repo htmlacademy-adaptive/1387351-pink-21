@@ -44,11 +44,12 @@
         <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <div class="page-main__form information">
-        <h2 class="information__prize wrapper">
+        <h2 class="information__prize">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="information__invitation">Пожалуйста, заполните форму ниже:</span>
         </h2>
         <form class="information__form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="information__fieldset wrapper">
+          <fieldset class="information__fieldset information__fieldset--contacts wrapper">
             <legend class="information__legend visually-hidden">Укажите имя, фамилию и отчество</legend>
             <label class="information__label" for="surname" aria-label="Введите вашу фамилию">Фамилия:</label>
             <input class="information__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
@@ -93,13 +94,13 @@
             </fieldset>
           </div>
           <fieldset class="information__fieldset wrapper">
-            <legend class="information__legend visually-hidden">Укажите телефон и адрес почты</legend>
+            <legend class="information__legend">Контактная информация</legend>
             <label class="information__label" for="phone" aria-label="Введите ваш номер телефона">Номер Телефона</label>
             <input class="information__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
             <label class="information__label" for="email" aria-label="Введите вашу электронную почту">Адрес почты</label>
             <input class="information__input" id="email" type="email" name="email" placeholder="Введите почту*" required>
           </fieldset>
-          <div class="information__background">
+          <div class="information__background information__background--app">
             <fieldset class="information__fieldset information__fieldset--even">
               <legend class="information__legend">С каким приложением путешествовали?</legend>
               <label class="information__label information__label--lists">

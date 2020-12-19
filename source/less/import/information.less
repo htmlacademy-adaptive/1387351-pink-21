@@ -4,13 +4,48 @@
 
 .information__background {
   background-color: var(--light-gray);
+
+  @media (min-width: @tablet) {
+    &--app {
+      order: -1;
+      background-color: var(--basic-white);
+    }
+  }
 }
 
 .information__prize {
+  padding: 0 20px;
+  margin: 0 auto;
   color: var(--basic-gray);
   font-size: 14px;
   line-height: 2.14em;
   font-weight: 400;
+
+  @media (min-width: @tablet) {
+    font-size: 18px;
+    line-height: 1.67em;
+    max-width: 490px;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 756px;
+  }
+}
+
+.information__invitation {
+  @media (max-width: @mobile) {
+    display: none;
+  }
+}
+
+.information__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .information__fieldset {
@@ -23,6 +58,30 @@
     margin: 0 auto;
     align-items: flex-start;
   }
+
+  @media (min-width: @tablet) {
+    &:not(&--contacts) {
+      border: 2px solid var(--border-gray);
+    }
+
+    &--contacts {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      order: -2;
+    }
+
+    &--even {
+      width: 620px;
+    }
+  }
+}
+
+.information__fieldset--contacts .information__input {
+  @media (min-width: @tablet) {
+    flex-basis: 70%;
+    flex-grow: 1;
+  }
 }
 
 .information__legend {
@@ -34,6 +93,11 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0 31px 0 31px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    padding: 0 25px;
+  }
 }
 
 .information__label {
