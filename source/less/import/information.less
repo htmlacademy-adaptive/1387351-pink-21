@@ -6,9 +6,11 @@
   background-color: var(--light-gray);
 
   @media (min-width: @tablet) {
+    background-color: var(--basic-white);
+    margin: 0 auto;
+
     &--app {
-      order: -1;
-      background-color: var(--basic-white);
+      order: -2;
     }
   }
 }
@@ -60,27 +62,59 @@
   }
 
   @media (min-width: @tablet) {
-    &:not(&--contacts) {
+    width: 620px;
+
+    &:not(&--name) {
       border: 2px solid var(--border-gray);
+      box-sizing: border-box;
     }
 
-    &--contacts {
+    &--name {
       flex-direction: row;
       flex-wrap: wrap;
       gap: 20px;
-      order: -2;
+      order: -3;
     }
 
-    &--even {
-      width: 620px;
+    &--contacts {
+      order: -1;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 }
 
-.information__fieldset--contacts .information__input {
+.information__fieldset--name .information__input {
   @media (min-width: @tablet) {
     flex-basis: 70%;
     flex-grow: 1;
+  }
+}
+
+.information__fieldset--contacts .information__input--phone {
+  @media (min-width: @tablet) {
+    flex-basis: 437px;
+    order: -2;
+  }
+}
+
+.information__fieldset--contacts .information__input--email {
+  @media (min-width: @tablet) {
+    flex-basis: 437px;
+    order: -1;
+  }
+}
+
+.information__fieldset--contacts .information__label--phone {
+  @media (min-width: @tablet) {
+    flex-basis: 50%;
+    order: -1;
+  }
+}
+
+.information__fieldset--contacts .information__label--email {
+  @media (min-width: @tablet) {
+    flex-basis: 50%;
   }
 }
 
@@ -119,6 +153,7 @@
 
   &--textfield {
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -151,6 +186,13 @@
     width: 229px;
     height: 149px;
     resize: none;
+
+    @media (min-width: @tablet) {
+      padding: 23px 23px 0 20px;
+      box-sizing: border-box;
+      width: 496px;
+      height: 189px;
+    }
   }
 }
 
@@ -160,6 +202,19 @@
   line-height: 2.14em;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    text-align: right;
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+}
+
+.information__footer {
+  @media (min-width: @tablet) {
+    display: flex;
+    gap: 140px;
+  }
 }
 
 .information__asterisk {
