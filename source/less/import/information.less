@@ -13,6 +13,15 @@
       order: -2;
     }
   }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+    width: 100%;
+
+    &--app {
+      width: 46%;
+    }
+  }
 }
 
 .information__prize {
@@ -47,6 +56,10 @@
   @media (min-width: @desktop) {
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 74px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 940px;
   }
 }
 
@@ -82,12 +95,34 @@
       flex-wrap: wrap;
     }
   }
+
+  @media (min-width: @desktop) {
+    width: 100%;
+    margin: 0;
+
+    &--name {
+      width: 46%;
+    }
+
+    &--even {
+      width: 100%;
+      margin: 0;
+    }
+
+    &--contacts {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .information__fieldset--name .information__input {
   @media (min-width: @tablet) {
     flex-basis: 70%;
     flex-grow: 1;
+  }
+
+  @media (min-width: @desktop) {
+    flex-basis: 60%;
   }
 }
 
@@ -96,12 +131,21 @@
     flex-basis: 437px;
     order: -2;
   }
+
+  @media (min-width: @desktop) {
+    flex-basis: 370px;
+  }
 }
 
 .information__fieldset--contacts .information__input--email {
   @media (min-width: @tablet) {
     flex-basis: 437px;
     order: -1;
+  }
+
+  @media (min-width: @desktop) {
+    flex-basis: 370px;
+    order: -2;
   }
 }
 
@@ -110,11 +154,19 @@
     flex-basis: 50%;
     order: -1;
   }
+
+  @media (min-width: @desktop) {
+    flex-basis: 40%;
+  }
 }
 
 .information__fieldset--contacts .information__label--email {
   @media (min-width: @tablet) {
     flex-basis: 50%;
+  }
+
+  @media (min-width: @desktop) {
+    flex-basis: 40%;
   }
 }
 
@@ -188,10 +240,17 @@
     resize: none;
 
     @media (min-width: @tablet) {
-      padding: 23px 23px 0 20px;
+      padding: 22px 23px 0 20px;
       box-sizing: border-box;
       width: 496px;
       height: 189px;
+    }
+
+    @media (min-width: @desktop) {
+      padding: 23px 23px 0 20px;
+      box-sizing: border-box;
+      width: 816px;
+      height: 124px;
     }
   }
 }
@@ -214,6 +273,10 @@
   @media (min-width: @tablet) {
     display: flex;
     gap: 140px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 100%;
   }
 }
 
