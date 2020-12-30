@@ -1,3 +1,14 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .tools__list {
   list-style: none;
   margin: 0;
@@ -14,6 +25,14 @@
   width: 280px;
   padding: 21px 0;
   cursor: pointer;
+
+  @media (min-width: @tablet) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 183px;
+  }
 
   &--submit {
     color: var(--basic-red);
@@ -45,5 +64,14 @@
       background-color: var(--basic-gray03);
       color: var(--basic-white03);
     }
+  }
+}
+
+.tools__photo {
+  object-fit: cover;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    height: 400px;
   }
 }
