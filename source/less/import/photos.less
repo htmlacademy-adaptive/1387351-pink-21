@@ -6,10 +6,17 @@
   align-items: center;
 
   @media (min-width: @tablet) {
+    max-width: 620px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -22,13 +29,9 @@
   @media (min-width: @tablet) {
     width: 300px;
   }
-
-  &--panorama {
-    width: 100%;
-  }
 }
 
-.photos__item--panorama .photos__quote {
+.photos__panorama .photos__quote {
   margin: 0 20px;
 
   @media (min-width: @desktop) {
@@ -43,6 +46,7 @@
 }
 
 .photos__image {
+  display: block;
   width: 100%;
   object-fit: cover;
 
