@@ -3,6 +3,16 @@
   padding: 25px 10px 26px 17px;
   display: flex;
   flex-wrap: wrap;
+
+  &:not(.photos__quote--panorama) {
+    @media (min-width: @tablet) {
+      flex-direction: column;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+      flex-grow: 1;
+    }
+  }
 }
 
 .comment__author {
@@ -31,7 +41,6 @@
   font-weight: 400;
   text-transform: uppercase;
   order: 1;
-  flex-basis: 100%;
   text-align: left;
   padding-left: 31px;
   background: url("../img/heart.svg") no-repeat top 50% left;
@@ -39,6 +48,16 @@
   &:hover,
   &:focus {
     background-image: url("../img/heart-hover.svg");
+  }
+
+  @media (min-width: @tablet) {
+    &--panorama {
+      order: 0;
+      flex-grow: 1;
+      text-align: right;
+      padding-right: 31px;
+      background: url("../img/heart.svg") no-repeat top 50% right;
+    }
   }
 }
 
@@ -50,4 +69,14 @@
   text-align: left;
   padding-bottom: 23px;
   flex-basis: 100%;
+
+  @media (min-width: @tablet) {
+    flex-grow: 1;
+    flex-basis: auto;
+
+    &--panorama {
+      order: 0;
+      padding-bottom: 0;
+    }
+  }
 }
