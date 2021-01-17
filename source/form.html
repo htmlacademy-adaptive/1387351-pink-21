@@ -49,14 +49,17 @@
           <span class="information__invitation">Пожалуйста, заполните форму ниже:</span>
         </h2>
         <form class="information__form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="information__fieldset information__fieldset--name wrapper">
+          <fieldset class="information__fieldset information__fieldset--name">
             <legend class="information__legend visually-hidden">Укажите имя, фамилию и отчество</legend>
-            <label class="information__label" for="surname" aria-label="Введите вашу фамилию">Фамилия:</label>
-            <input class="information__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
-            <label class="information__label" for="name" aria-label="Введите ваше имя">Имя:</label>
-            <input class="information__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
-            <label class="information__label" for="middle-name" aria-label="Введите ваше отчество">Отчество:</label>
-            <input class="information__input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            <label class="information__label information__label--name" aria-label="Введите вашу фамилию">Фамилия:
+              <input class="information__input information__input--name" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            </label>
+            <label class="information__label information__label--name" for="name" aria-label="Введите ваше имя">Имя:
+              <input class="information__input information__input--name" type="text" name="name" placeholder="Введите ваше имя*" required>
+            </label>
+            <label class="information__label information__label--name" aria-label="Введите ваше отчество">Отчество:
+              <input class="information__input information__input--name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            </label>
           </fieldset>
           <div class="information__background">
             <fieldset class="information__fieldset information__fieldset--even information__fieldset-app">
@@ -93,7 +96,7 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="information__fieldset information__fieldset--contacts wrapper">
+          <fieldset class="information__fieldset information__fieldset--contacts">
             <legend class="information__legend">Контактная информация</legend>
             <label class="information__label information__label--phone" for="phone" aria-label="Введите ваш номер телефона">Номер Телефона</label>
             <input class="information__input information__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
@@ -120,13 +123,13 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="information__fieldset wrapper">
+          <fieldset class="information__fieldset information__fieldset--textfield">
             <legend class="information__legend">Опишите свои эмоции</legend>
             <label class="information__label information__label--textfield" aria-label="Введите текст письма">
               <textarea class="information__input information__input--feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
           </fieldset>
-          <div class="information__footer wrapper">
+          <div class="information__footer">
             <button type="submit" class="information__submit-button form-buttons" aria-label="Отправить форму с введенными данными">
               Отправить форму
             </button>

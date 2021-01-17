@@ -7,7 +7,7 @@
 
   @media (min-width: @tablet) {
     background-color: var(--basic-white);
-    margin: 0 auto;
+    margin: 0 20px;
 
     &--app {
       order: -2;
@@ -35,7 +35,7 @@
   @media (min-width: @tablet) {
     font-size: 18px;
     line-height: 1.67em;
-    max-width: 490px;
+    padding: 0 85px;
   }
 
   @media (min-width: @desktop) {
@@ -66,15 +66,16 @@
   border: none;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+  min-width: 280px;
 
   &--even {
-    width: 280px;
     margin: 0 auto;
     align-items: flex-start;
   }
 
   @media (min-width: @tablet) {
-    width: 620px;
+    min-width: 620px;
 
     &:not(&--name) {
       border: 2px solid var(--border-gray);
@@ -82,25 +83,29 @@
     }
 
     &--name {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 20px;
       order: -3;
     }
 
     &--contacts {
+      margin: 0 20px;
       order: -1;
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    &--textfield {
+      margin: 0 20px;
+    }
   }
 
   @media (min-width: @desktop) {
+    min-width: auto;
     width: 100%;
     margin: 0;
 
     &--name {
       width: 46%;
+      padding: 0;
     }
 
     &--even {
@@ -114,43 +119,42 @@
   }
 }
 
-.information__fieldset--name .information__input {
-  @media (min-width: @tablet) {
-    flex-basis: 70%;
-    flex-grow: 1;
-  }
-
-  @media (min-width: @desktop) {
-    flex-basis: 60%;
+.information__fieldset--contacts .information__legend {
+  @media (max-width: @mobile) {
+    display: none;
   }
 }
 
 .information__fieldset--contacts .information__input--phone {
   @media (min-width: @tablet) {
     flex-basis: 437px;
+    flex-grow: 1;
     order: -2;
   }
 
   @media (min-width: @desktop) {
     flex-basis: 370px;
+    flex-grow: 0;
   }
 }
 
 .information__fieldset--contacts .information__input--email {
   @media (min-width: @tablet) {
     flex-basis: 437px;
+    flex-grow: 1;
     order: -1;
   }
 
   @media (min-width: @desktop) {
     flex-basis: 370px;
+    flex-grow: 0;
     order: -2;
   }
 }
 
 .information__fieldset--contacts .information__label--phone {
   @media (min-width: @tablet) {
-    flex-basis: 50%;
+    flex-basis: 100%;
     order: -1;
   }
 
@@ -161,7 +165,7 @@
 
 .information__fieldset--contacts .information__label--email {
   @media (min-width: @tablet) {
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
 
   @media (min-width: @desktop) {
@@ -205,6 +209,21 @@
   &--textfield {
     padding-left: 0;
     text-align: center;
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+  }
+
+  &--name {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet) {
+      flex-direction: row;
+      align-items: center;
+      flex-grow: 1;
+      padding: 0;
+    }
   }
 }
 
@@ -234,22 +253,33 @@
 
   &--feedback {
     padding: 22px 25px 22px 22px;
-    width: 229px;
+    flex-basis: 229px;
     height: 149px;
     resize: none;
+    flex-grow: 1;
 
     @media (min-width: @tablet) {
       padding: 22px 23px 0 20px;
       box-sizing: border-box;
-      width: 496px;
+      flex-basis: 496px;
       height: 189px;
     }
 
     @media (min-width: @desktop) {
       padding: 23px 23px 0 20px;
       box-sizing: border-box;
-      width: 816px;
+      flex-basis: 816px;
+      flex-grow: 0;
       height: 124px;
+    }
+  }
+
+  &--name {
+    margin-left: -23px;
+
+    @media (min-width: @tablet) {
+      flex: 1 1 auto;
+      margin-left: 20px;
     }
   }
 }
@@ -269,6 +299,9 @@
 }
 
 .information__footer {
+  min-width: 280px;
+  margin: 0 20px;
+
   @media (min-width: @tablet) {
     display: flex;
     gap: 140px;
@@ -276,6 +309,7 @@
 
   @media (min-width: @desktop) {
     width: 100%;
+    margin: 0;
   }
 }
 
