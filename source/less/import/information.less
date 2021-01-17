@@ -116,6 +116,11 @@
     &--contacts {
       flex-basis: 100%;
     }
+
+    &--achievments {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -204,6 +209,10 @@
     line-height: 1.67em;
     text-transform: none;
     padding-left: 0;
+
+    @media (min-width: @desktop) {
+      flex-basis: 30%;
+    }
   }
 
   &--textfield {
