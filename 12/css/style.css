@@ -884,6 +884,10 @@ img {
   .information__fieldset--contacts {
     flex-basis: 100%;
   }
+  .information__fieldset--achievments {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 659px) {
   .information__fieldset--contacts .information__legend {
@@ -969,6 +973,11 @@ img {
   line-height: 1.67em;
   text-transform: none;
   padding-left: 0;
+}
+@media (min-width: 1200px) {
+  .information__label--lists {
+    flex-basis: 30%;
+  }
 }
 .information__label--textfield {
   padding-left: 0;
