@@ -1,9 +1,15 @@
 .tools {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media (min-width: @tablet) {
+    padding-left: 0;
+  }
+
   @media (min-width: @desktop) {
+    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -23,15 +29,16 @@
   line-height: 1em;
   font-weight: 700;
   text-align: center;
-  width: 280px;
+  width: 100%;
   padding: 21px 0;
   cursor: pointer;
 
   @media (min-width: @tablet) {
-    width: 260px;
+    min-width: 260px;
   }
 
   @media (min-width: @desktop) {
+    min-width: auto;
     width: 183px;
   }
 
@@ -65,14 +72,5 @@
       background-color: var(--basic-gray03);
       color: var(--basic-white03);
     }
-  }
-}
-
-.tools__photo {
-  object-fit: cover;
-
-  @media (min-width: @tablet) {
-    width: 300px;
-    height: 400px;
   }
 }
