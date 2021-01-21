@@ -1,6 +1,15 @@
 .ranges-list {
+  padding-top: 39px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--basic-gray01);
+
   @media (min-width: @tablet) {
     flex-basis: 100%;
+  }
+
+  @media (min-width: @desktop) {
+    border: none;
+    margin-bottom: 181px;
   }
 }
 
@@ -8,6 +17,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: @mobile) {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
 }
 
 .ranges-list__label {
